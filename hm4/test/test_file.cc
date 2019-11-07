@@ -41,7 +41,7 @@ namespace{
 		typename LIST::size_type i = 0;
 
 		while( reader ){
-			std::string_view const key = std::string{ reader.getLine() };
+			std::string_view const key = reader.getLine();
 
 			std::string_view const val = tombstones ? "" : key;
 

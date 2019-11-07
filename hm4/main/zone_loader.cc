@@ -25,7 +25,7 @@ int main(int argc, char **argv){
 	FileReader<1024> reader{ filename };
 
 	while(reader){
-		const std::string &line = reader.getLine();
+		std::string const line = reader.getLine();
 
 		StringTokenizer const tok{ line, ':' };
 
